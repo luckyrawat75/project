@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+
+    header {
+      background-image: url('https://themewagon.github.io/feane/images/hero-bg.jpg');
+      height: 900px;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+
+    ul {
+      list-style: none;
+      float: right;
+      margin-right: 25px;
+      margin-top: 20px;
+      padding-right: 15px;
+    }
+
+    ul li {
+      display: inline-block;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 5px 20px;
+      border-radius: 10px;
+      transition: 0.7s ease;
+      font-weight: bold;
+
+    }
+
+    ul li a:hover {
+      background-color: #ffbe33;
+
+      color: white;
+      border-radius: none;
+    }
+
+    /*.logo img{
+            height:90px;
+            width:90px;
+            margin-top:10px;
+            margin-left:10px;
+            border-radius:3px;
+            
+           }*/
+    #para {
+      color: white;
+      font-size: 40px;
+      margin-left: 5%;
+      position: absolute;
+      margin-top: 300px;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 350px;
+      font-weight: bold;
+    }
+
+    #para2 {
+      color: white;
+      font-size: 25px;
+      position: absolute;
+      margin-top: 420px;
+      margin-left: 5%;
+      margin-right: 350px;
+      width: 450px;
+    }
+
+    #book {
+      margin-top: 630px;
+      position: absolute;
+      margin-left: 44%;
+      font-size: 20px;
+      height: 40px;
+      width: 180px;
+      border-radius: 20px;
+      padding: 10px 15px;
+      color: rgba(255, 255, 255, 0.886);
+      margin-left: 9%;
+      background-color: #f4a90ac6;
+      border: none;
+      cursor: pointer;
+
+
+    }
+
+    #book:hover {
+      background-color: #ffbe33;
+      border-radius: 20px;
+      border: none;
+      color: white;
+
+    }
+
+    #book a {
+      text-decoration: none;
+      color: white;
+
+    }
+
+    #book a:hover {
+
+      background-color: #ffbe33;
+      color: white;
+    }
+
+    .container {
+      height: 344px;
+      width: 100%;
+      border: 2px solid red;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .item {
+      border: 2px solid green;
+      background-color: #222831;
+      margin: 10px;
+      padding: 3px;
+    }
+
+    #item1 {
+      height: 200px;
+      width: 500px;
+      margin-left: 200px;
+      margin-top: 50px;
+
+    }
+
+    #item2 {
+      height: 200px;
+      width: 500px;
+      margin-left: 550px;
+      margin-top: 0px;
+
+    }
+
+    .pic {
+
+
+      display: inline-block;
+      overflow: hidden;
+      margin-top: 2px;
+      margin-left: 170px;
+      margin-right: 30px;
+      margin-bottom: 50px;
+    }
+
+    .pic img {
+
+      height: 200px;
+      width: 400px;
+
+      margin-left: 70px;
+      border-radius: 30px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      margin-right: 50px;
+      transition: all ease 1s;
+      overflow: hidden;
+
+    }
+
+    .pic img:hover {
+      scale: 1.2;
+
+      border-radius: 200px;
+      cursor: pointer;
+    }
+
+
+    #menu {
+      font-size: 50px;
+      padding-left: 45%;
+      padding-top: 15px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+    }
+
+    #no {
+      position: relative;
+      top: 30px;
+      bottom: 30px;
+
+    }
+
+    #my {
+      position: relative;
+      top: 30px;
+      bottom: 30px;
+    }
+
+    .our li {
+      margin-top: 30px;
+      float: right;
+      border: 2px solid yellow;
+      color: red;
+      list-style: none;
+      padding: 2px 2px;
+      border: 2px solid white;
+      font-size: 30px;
+      margin: auto;
+      width: 300px;
+
+    }
+
+    .our ul li a {
+      margin-top: 30px;
+      border: 2px solid rgb(232, 57, 165);
+      margin-top: 15px;
+      overflow: auto;
+      color: #ff0037;
+      font-weight: 30px;
+      border: 2px solid white;
+
+    }
+
+    .our ul li a:hover {
+
+      background-color: rgb(219, 114, 114);
+      color: blueviolet;
+      border-radius: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .com {
+
+      height: 600px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      background-color: #222831;
+    }
+
+    .name {
+
+      height: 580px;
+      width: 800px;
+      display: flex;
+    }
+
+    .name img {
+      height: 580px;
+      width: 1200px;
+      margin-top: 10px;
+      margin-left: 40px;
+    }
+
+    #std2 {
+      height: 540px;
+      width: 900px;
+      margin-left: 40px;
+    }
+
+    .oye {
+      color: white;
+    }
+
+    #one {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 160px;
+      margin-left: 90px;
+    }
+
+    #two {
+      margin-left: 60px;
+      width: 500px;
+      font-size: 20px;
+
+    }
+
+    #three {
+      margin-top: 15px;
+      margin-left: 145px;
+      padding: 4px 24px;
+      border-radius: 15px;
+      height: 50px;
+      width: 150px;
+      color: white;
+      background-color: #c7901ad3;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+
+    }
+
+    #three:hover {
+      background-color: #ffbe33;
+
+    }
+
+    .table {
+
+      height: 530px;
+      margin-top: 15px;
+
+      width: 100%;
+    }
+
+    #name {
+      font-size: 30px;
+      padding: 4px 4px;
+      margin-left: 70px;
+      margin-top: 10px;
+      width: 500px;
+    }
+
+    #number {
+      font-size: 30px;
+      padding: 4px 4px;
+      margin-left: 70px;
+      width: 500px;
+
+    }
+
+    #email {
+      font-size: 30px;
+      padding: 4px 4px;
+      margin-left: 70px;
+      width: 500px;
+
+    }
+
+    #time {
+      font-size: 30px;
+      padding: 4px 4px;
+      margin-left: 70px;
+      width: 500px;
+    }
+
+    #booking {
+      font-size: 30px;
+      font-weight: bold;
+      margin-left: 70px;
+      margin-top: 45px;
+    }
+
+    #date {
+      font-size: 30px;
+      padding: 4px 4px;
+      width: 500px;
+      margin-left: 70px;
+
+    }
+
+    #person {
+      font-size: 30px;
+      width: 500px;
+      margin-left: 70px;
+      padding: 4px 4px;
+
+    }
+
+    #car {
+      font-size: 20px;
+      margin-left: 70px;
+      padding: 4px 4px;
+    }
+
+    #now {
+      height: 50px;
+      width: 150px;
+      margin-top: 10px;
+      margin-left: 150px;
+      font-size: 20px;
+      border-radius: 20px;
+      border: none;
+      background-color: #fdb926be;
+      cursor: pointer;
+    }
+
+    #now:hover {
+      background-color: #ffbe33;
+      color: red;
+      font-weight: bold;
+    }
+
+    #cust {
+      font-size: 40px;
+      margin-left: 40%;
+      margin-top: 20px;
+    }
+
+    .person {
+      height: 350px;
+      width: 100%;
+
+      display: flex;
+    }
+
+    .sum {
+
+      flex-direction: row;
+      height: 250px;
+      width: 500px;
+      overflow: hidden;
+      color: white;
+      transition: all ease-in-out 0.1s;
+
+    }
+
+    .sum:hover {
+      scale: 1.1;
+    }
+
+    #sum1 {
+      margin-left: 170px;
+      margin-top: 40px;
+      border-radius: 15px;
+      background-color: #222831;
+    }
+
+    #sum2 {
+      margin-left: 50px;
+      margin-top: 40px;
+      border-radius: 15px;
+      background-color: #222831;
+
+    }
+
+    #review {
+      padding-left: 25px;
+      padding-top: 30px;
+      font-size: 20px;
+
+    }
+
+    #kkk {
+      padding-left: 25px;
+      padding-top: 30px;
+
+    }
+
+    #mmm {
+      padding-left: 25px;
+      padding-top: 30px;
+
+    }
+
+    #review2 {
+      padding-left: 25px;
+      padding-top: 30px;
+      font-size: 20px;
+
+
+    }
+
+    #kkk2 {
+      padding-left: 25px;
+      padding-top: 30px;
+    }
+
+    #mmm2 {
+      padding-left: 25px;
+      padding-top: 30px;
+
+    }
+
+    .box {
+
+      height: 700px;
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      background-color: #343a40;
+    }
+
+    .box {
+      background-color: #343a40;
+      height: 400px;
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    .id {
+
+      height: 300px;
+      width: 400px;
+      margin: 25px 30px;
+      padding-left: 150px;
+      padding-top: 100px;
+      color: white;
+
+
+    }
+
+    .box a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+    }
+
+    .box a:hover {
+      color: yellow;
+    }
+
+    #id2 {
+      font-size: 25px;
+      padding-right: 15px;
+    }
+
+    .cll {
+
+      height: 400px;
+      width: 470px;
+      margin-left: 900px;
+      margin-top: 1850px;
+      position: absolute;
+      top: 150px;
+      background-color: #343a40;
+      COLOR: WHITE;
+      padding-top: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 10px;
+    }
+
+    #open {
+      font-size: 35px;
+      font-weight: bold;
+
+    }
+
+    #tym {
+      font-size: 20px;
+      padding-top: 15px;
+
+    }
+
+    #pr {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    #st {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    #sun {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="first">
+      <div class="logo">
+        <h1 id="para">Fast Food Restaurant</h1>
+        <p id="para2">Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam
+          quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus
+          libero ipsam.</p>
+        <button id="book"><a href="#">Order Now</a></button>
+      </div>
+      <ul>
+        <li><a href="/13projectfood1.html">Home</a></li>
+        <li><a href="/14projectfood2.html">About</a></li>
+
+        <li><a href="/15projectfood3.html">Book Table</a></li>
+        <li><a href="/16projectfood4.html">Menu</a></li>
+    </nav>
+  </header>
+  <main>
+    <div class="pic" id="no">
+      <img
+        src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg.transform/schema-16x9/image.jpg"
+        ; </div>
+
+      <div class="pic" id="my">
+        <img
+          src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"
+          ; </div>
+  </main>
+  <div>
+
+
+    <div class="com">
+      <div class="name" id="std">
+        <img src="https://themewagon.github.io/feane/images/about-img.png" ; </div>
+        <div class="oye">
+          <h4 id="one">We Are Feane</h4>
+          <br>
+          <p id="two">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+            alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+            hidden in the middle of text. All</p>
+          <button id="three">Read More</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="table">
+      <h2 id="booking">Book A Table</h2>
+      <br>
+      <input type="text" placeholder="Your Name" required autocomplete="off" id="name">
+      <br>
+      <br>
+      <input type="number" placeholder="Phone Number" required autocomplete="off" id="number">
+      <br>
+      <br>
+      <input type="email" placeholder="Your Email" required autocomplete="off" id="email">
+      <br>
+      <br>
+      <input type="date" placeholder="date" required id="date">
+      <br>
+      <br>
+      <input type="time" placeholder="time" required id="time">
+      <br>
+      <br>
+      <label for="cars" id="car">How many person:</label>
+      <br>
+
+      <select id="person" name="person">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <br>
+      <button id="now">Book Now</button>
+    </div>
+    <div class="cll">
+      <h2 id="open">OPENING HOURS</h2>
+
+      <p id="tym">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, inventore hic nulla, provident
+        laudantium voluptate ipsa eligendi commodi mollitia vero animi, repudiandae quidem minima est sint
+        sapiente quas iure deleniti.</p>
+      <br>
+      <br>
+      <pre id="pr">Monday - Friday                                      8AM - 6AM</pre>
+      <hr>
+      <br>
+      <br>
+      <pre id="st">Saturday                                                  9AM - 5PM</pre>
+      <hr>
+      <br>
+      <br>
+      <pre id="sun">Sunday                                                     9AM - 4PM</pre>
+      <hr>
+    </div>
+    <div id="cust">
+      <h4>What Says Our Customers</h4>
+    </div>
+    <div class="person">
+      <div class="sum" id="sum1">
+        <p id="review">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam
+        </p>
+        <h2 id="kkk">
+          Moana Michell
+        </h2>
+        <h3 id="mmm">
+          magna aliqua
+        </h3>
+      </div>
+      <div class="sum" id="sum2">
+        <p id="review2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        <h2 id="kkk2">Mike Hamell</h2>
+        <h3 id="mmm2">magna aliqua</h3>
+      </div>
+      <br>
+    </div>
+    <div class="box">
+      <div class="id" id="id1">
+        <h2>Contact Us</h2>
+        <br>
+        <br>
+        <h3><a href="#">Location</>
+        </h3>
+        <br>
+        <br>
+        <h3><a href="#"> Call + 0123456789</a></h3>
+        <br>
+        <h3><a href="#">demo @gmail.com</a></h3>
+      </div>
+      <div class="id" id="id2">
+        <h2 id="fff">Feane</h2>
+        <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+          Latin words, combined with</p>
+      </div>
+      <div class="id" id="id3">
+        <h2>Opening Hours</h2>
+        <br>
+        <br>
+        <h4>Everyday</h4>
+        <br>
+
+
+      </div>
+    </div>
+    </footer>
+    <br>
+
+
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul {
+            background-color: rgba(0, 0, 0, 0.652);
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+            list-style: none;
+            margin: 12px 16px;
+            padding: 4px 4px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+
+        nav ul li a:hover {
+            color: rgba(255, 255, 0, 0.884);
+
+        }
+
+        nav input {
+            border: #544a4a;
+            border-radius: 4px;
+            padding: 3px;
+        }
+
+        #btn {
+            background-color: #f4af19cb;
+            border: none;
+            margin-right: 40px;
+            margin-top: 15px;
+            height: 40px;
+            margin-bottom: 15px;
+            width: 180px;
+            padding: 2px 2px;
+            float: right;
+            border: 2px solid white;
+            border-radius: 25px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            color: white;
+            background-color: #f8b82ee0;
+            border-radius: 30px;
+        }
+
+        .table {
+
+            height: 530px;
+            margin-top: 15px;
+
+            width: 100%;
+        }
+
+        #name {
+            font-size: 30px;
+            padding: 4px 4px;
+            margin-left: 70px;
+            margin-top: 10px;
+            width: 500px;
+        }
+
+        #number {
+            font-size: 30px;
+            padding: 4px 4px;
+            margin-left: 70px;
+            width: 500px;
+
+        }
+
+        #email {
+            font-size: 30px;
+            padding: 4px 4px;
+            margin-left: 70px;
+            width: 500px;
+
+        }
+
+        #booking {
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 70px;
+            margin-top: 45px;
+        }
+
+        #date {
+            font-size: 30px;
+            padding: 4px 4px;
+            width: 500px;
+            margin-left: 70px;
+
+        }
+
+        #time {
+            font-size: 30px;
+            padding: 4px 4px;
+            width: 500px;
+            margin-left: 70px;
+
+
+        }
+
+        #person {
+            font-size: 30px;
+            width: 500px;
+            margin-left: 70px;
+            padding: 4px 4px;
+
+        }
+
+        #car {
+            font-size: 20px;
+            margin-left: 70px;
+            padding: 4px 4px;
+
+
+        }
+
+        #now {
+            height: 50px;
+            width: 150px;
+            margin-top: 10px;
+            margin-left: 150px;
+            font-size: 20px;
+            border-radius: 20px;
+            border: none;
+            background-color: #fdb926be;
+            cursor: pointer;
+        }
+
+        #now:hover {
+            background-color: #ffbe33;
+            color: red;
+            font-weight: bold;
+        }
+
+        #cust {
+            font-size: 40px;
+            margin-left: 40%;
+            margin-top: 20px;
+        }
+
+
+
+
+
+        .box {
+            height: 400px;
+            width: 100%;
+            background-color: #343a40;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .id {
+
+            height: 300px;
+            width: 400px;
+            margin: 25px 30px;
+            padding-left: 150px;
+            padding-top: 100px;
+            color: white;
+
+
+        }
+
+        .box a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .box a:hover {
+            color: yellow;
+        }
+
+        #id2 {
+            font-size: 25px;
+            padding-right: 15px;
+        }
+
+        #fff {
+            padding-left: 60px;
+        }
+
+
+
+        .cll {
+
+            height: 400px;
+            width: 470px;
+            margin-left: 900px;
+            position: absolute;
+            top: 150px;
+            background-color: #343a40;
+            COLOR: WHITE;
+            padding-top: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #open {
+            font-size: 35px;
+            font-weight: bold;
+
+        }
+
+        #tym {
+            font-size: 20px;
+            padding-top: 15px;
+
+        }
+
+        #pr {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        #st {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        #sun {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/13projectfood1.html">Home</a></li>
+                <li><a href="/14projectfood2.html">About</a></li>
+                <li><a href="/15projectfood3.html">Book Table</a></li>
+                <li><a href="/16projectfood4.html">Menu</a></li>
+                <button id="btn">Order online</button>
+            </ul>
+        </nav>
+    </header>
+    <div class="table">
+        <h2 id="booking">Book A Table</h2>
+        <br>
+        <input type="text" placeholder="Your Name" required autocomplete="off" id="name">
+        <br>
+        <br>
+        <input type="number" placeholder="Phone Number" required autocomplete="off" id="number">
+        <br>
+        <br>
+        <input type="email" placeholder="Your Email" required autocomplete="off" id="email">
+        <br>
+        <br>
+        <input type="date" placeholder="date" required id="date">
+        <br>
+        <br>
+        <input type="time" placeholder="time" required id="time">
+        <br>
+        <br>
+        <label for="cars" id="car">How many person:</label>
+        <br>
+
+        <select id="person" name="person">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br>
+        <button id="now">Book Now</button>
+        <div class="cll">
+            <h2 id="open">OPENING HOURS</h2>
+
+            <p id="tym">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, inventore hic nulla, provident
+                laudantium voluptate ipsa eligendi commodi mollitia vero animi, repudiandae quidem minima est sint
+                sapiente quas iure deleniti.</p>
+            <br>
+            <br>
+            <pre id="pr">Monday - Friday                                      8AM - 6AM</pre>
+            <hr>
+            <br>
+            <br>
+            <pre id="st">Saturday                                                  9AM - 5PM</pre>
+            <hr>
+            <br>
+            <br>
+            <pre id="sun">Sunday                                                     9AM - 4PM</pre>
+            <hr>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="box">
+        <div class="id" id="id1">
+            <h2>Contact Us</h2>
+            <br>
+            <br>
+            <h3><a href="#">Location</>
+            </h3>
+            <br>
+            <br>
+            <h3><a href="#"> Call + 0123456789</a></h3>
+            <br>
+            <h3><a href="#">demo @gmail.com</a></h3>
+        </div>
+        <div class="id" id="id2">
+            <h2 id="fff">Feane</h2>
+
+
+            <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                Latin words, combined with</p>
+        </div>
+        <div class="id" id="id3">
+            <h2>Opening Hours</h2>
+            <br>
+            <br>
+            <h4>Everyday</h4>
+            <br>
+
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
